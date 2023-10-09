@@ -84,7 +84,7 @@ jobs:
 
     - run: rm -f emacs.drv
 
-    - uses: stefanzweifel/git-auto-commit-action@v4
+    - uses: stefanzweifel/git-auto-commit-action@v5
       if: ${{ success() }}
       with:
         commit_message: "automation: Emacs ${{ steps.version.outputs.ver }} -> ${{ steps.version.outputs.rev }}"
