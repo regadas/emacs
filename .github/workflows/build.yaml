@@ -26,7 +26,7 @@ jobs:
       contents: write
     steps:
 
-    - uses: actions/checkout@v3.5.3
+    - uses: actions/checkout@v4.1.1
       with:
         # Nix Flakes doesn't work on shallow clones
         fetch-depth: 0
